@@ -100,13 +100,46 @@ body	{
 	width: 40%;
 }
 
-
 .Footer {
 	padding: 1em;
 	font-size: 2em;
 	text-transform: uppercase;
 }
 
+.Footer ul 	{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: black;
+  	text-align: right;
+  	font-size: 0.5em;
+}
+
+.Footer a {
+  text-decoration: underline;
+  color: red;
+}
+.Footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.5em;
+  color: red;
+}
+
+.Footer li {
+  display: inline-block;
+}
+
+.Footer li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px red;
+}
 
 label {
     width:180px;
