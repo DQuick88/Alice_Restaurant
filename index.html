@@ -1,32 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!--
-		  The above 2 meta tags *must* come first in the <head>
-		  to consistently ensure proper document rendering.
-		  Any other head element should come *after* these tags.
-		 -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alice's Restaurant</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+	<link rel="stylesheet" type="text/css" href="alice_style.css">
+</head>
 
-		 <!-- This is how you format an HTML comment, by the way. -->
-
-		 <!-- Link to an external CSS file. -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-		<link rel="stylesheet" href="alice_style.css">
-
-		<title>Alice's Restaurant</title>
-
-	</head>
-	<body>
-		<div class="Landing">
-			<div class="Sign">
-				<h1>alice's restaurant</h1>
+<body>
+	<main>
+		<section class="Landing">
+			<header class="Sign">
+				<h1>Alice's Restaurant</h1>
 				<p>You can have anything you want.</p>
-			</div>
-		</div>
+			</header>
+		</section>
 
-		<div class="Testimonials">
+		<section class="Testimonials">
 			<div class="Testimonial">
 				<img src="images/woman.png">
 				<p class="name">Emma Goldman</p>
@@ -42,10 +33,12 @@
 				<p class="name">Emma Goldman</p>
 				<p class="review">The finest meal I ever had.</p>
 			</div>
-		</div>
+		</section>
 
-		<div class="Menu">
-			<h2>menu</h2>
+		<section class="Menu">
+			<header>
+				<h2>menu</h2>
+			</header>
 			<ol>
 				<li>
 					<h3>SPECIAL #1: A WORKING WOMAN'S POTATOES</h3>
@@ -60,15 +53,15 @@
 					<p>Tired of capitalism processing food through you? Try our radical radish, cucumber, kale, arugula, chickpea, and cheddar salad. Topped with farm-fresh egg.</p>
 				</li>
 			</ol>
-		</div>
+		</section>
 
-		<div class="Information">
+		<section class="Information">
 			<div class="Location">
 				<h3>Location</h3>
 				<address>
 					1269 88th St NW
-						1/2 mi. from the railroad track
-							Great Barrington, Massachusetts
+					1/2 mi. from the railroad track
+					Great Barrington, Massachusetts
 				</address>
 			</div>
 			<div class="About">
@@ -77,9 +70,9 @@
 					Inspired by the Arlo Guthrie song, Alice’s has been providing healthy sustenance to and from the local community since 1992.
 				</p>
 			</div>
-		</div>
+		</section>
 
-		<div class="Contact">
+		<section class="Contact">
 			<form action="/my-handling-form-page" method="post">
 				<div>
 					<label for="name">Name:</label>
@@ -91,13 +84,20 @@
 				</div>
 				<div>
 					<label for="msg">What's Up?</label>
-					<input type="text" id="msg" name="user_message" placeholder="Type Your Message">
+					<input type="text" id="msg" name="user_message" placeholder="Type Your Message"></textarea>
 				</div>
 			</form>
-		</div>
+		</section>
+	</main>
 
-		<div class="Footer">
-			<p><strong>Unite</strong> for good food</p>
-		</div>
-	</body>
+	<footer class="Footer">
+		<p><strong>Unite</strong> for good food</p>
+		<ul id="footer">
+      		<li><a href="#">Privacy</a></li>
+      		<li><a href="#">Terms</a></li>
+      		<li><a href="#">Contact</a></li>
+    	</ul>
+    	<span id="footer">Copyright 2021, <a href="https://zerotocode.today/turning-mockups-into-code">Alice's Restaurant</a></span>
+	</footer>
+</body>
 </html>
